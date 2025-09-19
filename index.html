@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/pico.min.css">
-    <title>File Browawe</title>
-
+  <meta charset="UTF-8">
+  <title>File Browser</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <h1>My Files</h1>
+  <main class="container">
+    <h1>File Browser</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>File Icon</th>
+          <th>File Name</th>
+          <th>File Type</th>
+          <th>File Size</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><i class="fa-solid fa-image"></i></td>
+          <td><a href="image.png">image.png</a></td>
+          <td>PNG Image</td>
+          <td>~120 KB</td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-code"></i></td>
+          <td><a href="extra.html">extra.html</a></td>
+          <td>HTML</td>
+          <td>~2 KB</td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-database"></i></td>
+          <td><a href="data.json">data.json</a></td>
+          <td>JSON</td>
+          <td>~1 KB</td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-file-lines"></i></td>
+          <td><a href="notes.txt">notes.txt</a></td>
+          <td>Plaintext</td>
+          <td>~500 B</td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-file-pdf"></i></td>
+          <td><a href="sample.pdf">sample.pdf</a></td>
+          <td>PDF</td>
+          <td>~250 KB</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Observations</h2>
+    <ul>
+      <li>My browser displayed the image directly when I clicked on it.</li>
+      <li>The PDF opened in a built-in viewer instead of downloading automatically.</li>
+      <li>The JSON and text files opened in plain text view without styling.</li>
+    </ul>
+  </main>
 </body>
 </html>
+
