@@ -11,52 +11,58 @@
 
 </head>
 <body>
-  <img src="images/logo.png" alt="Logo" width="200">
-  <h1>My Files</h1>
+    <img src="images/logo.png" alt="Logo" width="200">
+    <h1>My Files</h1>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <table>
-  <thead>
-    <tr>
-      <th scope="col">Planet</th>
-      <th scope="col">Diameter (km)</th>
-      <th scope="col">Distance to Sun (AU)</th>
-      <th scope="col">Orbit (days)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Mercury</th>
-      <td>4,880</td>
-      <td>0.39</td>
-      <td>88</td>
-    </tr>
-    <tr>
-      <th scope="row">Venus</th>
-      <td>12,104</td>
-      <td>0.72</td>
-      <td>225</td>
-    </tr>
-    <tr>
-      <th scope="row">Earth</th>
-      <td>12,742</td>
-      <td>1.00</td>
-      <td>365</td>
-    </tr>
-    <tr>
-      <th scope="row">Mars</th>
-      <td>6,779</td>
-      <td>1.52</td>
-      <td>687</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <th scope="row">Average</th>
-      <td>9,126</td>
-      <td>0.91</td>
-      <td>341</td>
-    </tr>
-  </tfoot>
-</table>
+      <thead>
+        <tr>
+          <th>File Icon</th>
+          <th>File Name</th>
+          <th>File Type</th>
+          <th>File Size</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><i class="fa-regular fa-image"></i></td>
+          <td><a href="sample.png">sample.png</a></td>
+          <td>PNG</td>
+          <td>placeholder</td>
+        </tr>
+        <tr>
+          <td><i class="fa-regular fa-file-code"></i></td>
+          <td><a href="sample.html">sample.html</a></td>
+          <td>HTML</td>
+          <td>~0.1 KB</td>
+        </tr>
+        <tr>
+          <td><i class="fa-regular fa-file-lines"></i></td>
+          <td><a href="sample.json">sample.json</a></td>
+          <td>JSON</td>
+          <td>~0.1 KB</td>
+        </tr>
+        <tr>
+          <td><i class="fa-regular fa-file-alt"></i></td>
+          <td><a href="sample.txt">sample.txt</a></td>
+          <td>TXT</td>
+          <td>~0.1 KB</td>
+        </tr>
+        <tr>
+          <td><i class="fa-regular fa-file-pdf"></i></td>
+          <td><a href="sample.pdf">sample.pdf</a></td>
+          <td>PDF</td>
+          <td>placeholder</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Browser Observations</h2>
+    <ul>
+      <li>Text and HTML files display directly in the browser, showing their content.</li>
+      <li>JSON files are shown as plain text, not formatted.</li>
+      <li>PDF and image files prompt download or open in a viewer tab, depending on browser settings.</li>
+    </ul>
 </body>
 </html>
 
